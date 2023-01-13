@@ -17,12 +17,13 @@ namespace UserDetail.Controllers
         public UsersController(UserDetailContext context)
         {
             _context = context;
+            _context.Database.EnsureCreated();
         }
 
         // GET: Users
         public async Task<IActionResult> Index()
-        {
-              return View(await _context.User.ToListAsync());
+        {            
+            return View(await _context.User.ToListAsync());
         }
 
         // GET: Users/Details/5

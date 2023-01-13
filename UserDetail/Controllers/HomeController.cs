@@ -16,14 +16,6 @@ namespace UserDetail.Controllers
 
         public IActionResult Index()
         {
-            //using (var ctx = new UserDetailContext())
-            //{
-            //    var user = new User() { FirstName = "test user", FamilyName = "kaushal" };
-
-            //    ctx.User.Add(user);
-            //    ctx.SaveChanges();
-            //}
-            //
             return View();
         }
 
