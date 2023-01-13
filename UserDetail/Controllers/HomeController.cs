@@ -23,6 +23,7 @@ namespace UserDetail.Controllers
             //    ctx.User.Add(user);
             //    ctx.SaveChanges();
             //}
+            //
             return View();
         }
 
